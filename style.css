@@ -1,0 +1,209 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h6 {
+	font-weight: 100;
+}
+
+.btn {
+	border-radius: 999px;
+}
+
+.navbar {
+	background-color: #212121;
+	color: white;
+}
+
+.navbar-nav {
+	float: right;
+}
+
+.carousel-caption {
+	margin-bottom: 30px;
+}
+
+.carousel-item {
+	height: 66.666vh;
+	width: 100%;
+}
+
+.carousel-item img {
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-caption {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cover {
+	-o-object-fit: cover;
+	-webkit-object-fit: cover;
+    	object-fit: cover;
+}
+
+.year-carousel {
+	height: calc(33.3333vh - 105px);
+	background-color: grey;
+	padding: 0;
+	white-space: nowrap;
+	overflow-x: scroll;
+}
+
+.year-box {
+	height: 100%;
+	width: 20%;
+	background-color: #222;
+	display: inline-block;
+	margin: 0;
+	margin-right: -5px;
+	transition-duration: 0.3s;
+}
+
+.year-box:hover {
+	width: 25%;
+	transition-duration: 0.3s;
+}
+
+.year-box img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.year-box:nth-child(2n) {background-color: #777;}
+
+.year-box-overlay {
+	height: inherit;
+	width: inherit;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.333333);
+	color: white;
+	padding: 1em;
+}
+
+#search-form {
+	margin: auto;
+}
+
+#search-refine {
+	min-height: 90vh;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+.person-grid {
+	margin: 0 auto;
+	padding-bottom: 60px;
+}
+
+.person {
+	display: inline-block;
+    vertical-align: top;
+	width: 33%;
+	margin-right: -4px;
+	height: 200px;
+	background-color: #777;
+}
+
+.person-info {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	color: white;
+	position: relative;
+	opacity: 0;
+	transition-duration: 0.3s;
+}
+
+.person-info button {
+	position: absolute;
+	bottom: 20px;
+}
+
+.person-info:hover {
+	opacity: 1;
+	transition-duration: 0.3s;
+}
+
+.work-badge {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	height: 10px;
+	width: 10px;
+	background-color: red;
+	border-radius: 50%;
+}
+
+.person {
+	background-image: url(images/featured-students/student.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.person:nth-child(2n){
+	background-image: url(images/featured-students/student2.jpg);
+}
+
+.person:nth-child(3n){
+	background-image: url(images/featured-students/student3.jpg);
+}
+
+#login-module {
+	background-color: #f2f2f2;
+	padding: 60px;
+}
+
+.year-banner {
+	background-size: cover;
+	background-position: top;
+}
+
+/* profile page */
+
+.profile-picture {
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+}
+
+.profile-picture img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+footer {
+	font-size: 14px;
+	color: #555;
+	background-color: #000;
+	padding: 14px 0px;
+	text-align: center;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	margin-top: 60px;
+}
+
+footer a:link, a:visited {
+	color: #999;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.year-carousel::-webkit-scrollbar {
+	background: #212121;
+}
+
+.year-carousel::-webkit-scrollbar-thumb {
+	background: #d00d2d;
+};
