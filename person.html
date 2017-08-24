@@ -33,27 +33,118 @@
 
 <main>
 
-	<div class="jumbotron">
+
+	 <!-- Profile Banner -->
+	<div class="jumbotron profile-banner">
 
 	</div>
-	<div class="container">
+
+	<!-- profile -->
+	<main class="container">
 		<div class="row">
-			<div class="col-4">
+			<div class="col-12 col-sm-12 col-md-6 col-xl-3">
+
+				<!-- Profile Picture -->
 				<div class="profile-picture">
 					<img class="cover" src="images/featured-students/student2.jpg" alt="">
 				</div>
+
+				<!-- Basic Information -->
 				<div class="info">
-					<h1>Student Name</h1>
+					<!-- Name -->
+					<h2>Student Name</h2>
+					<!-- Years Involved -->
+					<h5>2016, 2017</h5>
+					<!-- Occupation -->
+					<p>Designer<br>
+					<!-- Employer -->
+					at The Agency</p>
+					<hr>
+					<!-- Phone Number -->
+					<p>(555) 555-5555</p>
+					<!-- Email -->
+					<p><a href="mailto:email@example.com">email@example.com</a></p>
+					<!-- Personal URL -->
+					<p><a href="http://www.personalwebsite.com" target="_blank">personalwebsite.com</a></p>
+					<!-- Download Resume -->
+					<a href=""><button class="btn btn-secondary">Download Resume</button></a>
+					<!-- Network Accounts -->
+					<div id="network-accounts" class="py-3">
+						<!-- behance -->
+						<div class="account text-center">
+							<a href="http://www.behance.com">
+							<img src="images/icons/placeholder.svg" alt="">
+							<p>Behance</p>
+							</a>
+						</div>
+
+						<!-- linkedin -->
+						<div class="account text-center">
+							<a href="http://www.linkedin.com">
+							<img src="images/icons/placeholder.svg" alt="">
+							<p>LinkedIn</p>
+							</a>
+						</div>
+
+						<!-- Dribbble -->
+						<div class="account text-center">
+							<a href="http://www.dribbble.com">
+							<img src="images/icons/placeholder.svg" alt="">
+							<p>Dribbble</p>
+							</a>
+						</div>
+
+						<!-- GitHub -->
+						<div class="account text-center">
+							<a href="http://www.github.com">
+							<img src="images/icons/placeholder.svg" alt="">
+							<p>GitHub</p>
+							</a>
+						</div>
+					</div>
+
 				</div>
 			</div>
-			<div class="col-4">
-				
+			
+			<!-- bio -->
+			<div class="col-12 col-sm-12 col-md-6 col-xl-6">
+				<p>Innumerabilia dici possunt in hanc sententiam, sed non necesse est. Quae similitudo in genere etiam humano apparet. Vestri haec verecundius, illi fortasse constantius. Tamen a proposito, inquam, aberramus. O magnam vim ingenii causamque iustam, cur nova existeret disciplina! Perge porro. Quod autem principium officii quaerunt, melius quam Pyrrho; Prioris generis est docilitas, memoria; Non quaeritur autem quid naturae tuae consentaneum sit, sed quid disciplinae. Hoc loco tenere se Triarius non potuit. Certe nihil nisi quod possit ipsum propter se iure laudari.</p>
 			</div>
-			<div class="col-4">
-				
+
+			<!-- Focuses -->
+			<div id="focuses" class="col-12 col-sm-12 col-xl-3 py-3">
+				<!-- Focus -->
+				<div class="focus">
+					<h5>Print Design</h5>
+					<ul class="skills">
+						<li class="skill">Adobe Illustrator</li>
+						<li class="skill">Adobe InDesign</li>
+						<li class="skill">Adobe Photoshop</li>
+						<li class="skill">Typography</li>
+					</ul>
+				</div>
+
+				<!-- Focus -->
+				<div class="focus">
+					<h5>Branding</h5>
+					<ul class="skills">
+						<li class="skill">Logo Design</li>
+						<li class="skill">Brand Strategy</li>
+						<li class="skill">Styleguiding</li>
+					</ul>
+				</div>
+
+				<!-- Focus -->
+				<div class="focus">
+					<h5>Motion Graphics</h5>
+					<ul class="skills">
+						<li class="skill">Adobe After Effetcs</li>
+						<li class="skill">Cinema 4D</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
+	</main>
 	
 </main>
 
@@ -61,6 +152,17 @@
 <footer>
 	&copy; Copyright <a href="http://www.viscomcenter.com">VISCOM</a> 2017. All rights reserved.
 </footer>
+
+<script>
+	$(document).ready(function(){
+		// hide toggelable elements
+		$('.skills').hide();
+
+		$('.focus').click(function(){
+			$(this).children('.skills').slideToggle();
+		});
+	});
+</script>
 	
 </body>
 </html>

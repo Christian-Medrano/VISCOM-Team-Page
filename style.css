@@ -1,5 +1,12 @@
+
+
 body {
 	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+}
+
+main {
+	padding-bottom: 60px;
 }
 
 h1, h2, h3, h4, h6 {
@@ -170,12 +177,51 @@ h1, h2, h3, h4, h6 {
 	height: 200px;
 	width: 200px;
 	overflow: hidden;
+	margin-top: -100px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	border: solid 5px white;s
 }
 
 .profile-picture img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+}
+
+.profile-banner {
+	height: 25vh;
+}
+
+.account {
+	margin-right: 20px;
+}
+
+#network-accounts {
+	display: flex;
+	flex: wrap;
+}
+
+#focuses {
+	background-color: #212121;
+}
+
+.focus {
+	border: 2px solid white;
+	color: white;
+	padding: 10px;
+	margin-bottom: 8px;
+	font-weight: 300;
+}
+
+.focus:hover {
+	background-color: #333;
+}
+
+.profile-banner {
+	background-image: url('images/placeholder.gif');
+	background-size: cover;
+	background-position: center;
 }
 
 footer {
