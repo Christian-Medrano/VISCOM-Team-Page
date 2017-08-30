@@ -1,14 +1,10 @@
-
-
 body {
 	font-family: 'Roboto', sans-serif;
 	min-height: 100vh;
 }
-
 main {
 	padding-bottom: 60px;
 }
-
 h1, h2, h3, h4, h6 {
 	font-weight: 100;
 }
@@ -20,26 +16,24 @@ h1, h2, h3, h4, h6 {
 .navbar {
 	background-color: #212121;
 	color: white;
+	display: flex;
+	justify-content: space-between;
 }
-
 .navbar-nav {
-	float: right;
+
 }
 
 .carousel-caption {
 	margin-bottom: 30px;
 }
-
 .carousel-item {
 	height: 66.666vh;
 	width: 100%;
 }
-
 .carousel-item img {
 	width: 100%;
 	height: 100%;
 }
-
 .carousel-caption {
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -53,11 +47,11 @@ h1, h2, h3, h4, h6 {
 .year-carousel {
 	height: calc(33.3333vh - 105px);
 	background-color: grey;
+	position: relative;
 	padding: 0;
 	white-space: nowrap;
 	overflow-x: scroll;
 }
-
 .year-box {
 	height: 100%;
 	width: 20%;
@@ -67,20 +61,10 @@ h1, h2, h3, h4, h6 {
 	margin-right: -5px;
 	transition-duration: 0.3s;
 }
-
 .year-box:hover {
 	width: 25%;
 	transition-duration: 0.3s;
 }
-
-.year-box img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-
-.year-box:nth-child(2n) {background-color: #777;}
-
 .year-box-overlay {
 	height: inherit;
 	width: inherit;
@@ -91,6 +75,12 @@ h1, h2, h3, h4, h6 {
 	color: white;
 	padding: 1em;
 }
+.year-box img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.year-box:nth-child(2n) {background-color: #777;}
 
 #search-form {
 	margin: auto;
@@ -224,6 +214,11 @@ h1, h2, h3, h4, h6 {
 	background-position: center;
 }
 
+/*utilities*/
+.bg-dark{
+	background-color: #212121 !important;
+}
+
 footer {
 	font-size: 14px;
 	color: #555;
@@ -233,6 +228,21 @@ footer {
 	position: relative;
 	bottom: 0;
 	width: 100%;
+}
+
+/*buttons and inputs*/
+.form-control {
+	border-radius: 999px;
+}
+.btn-outline-secondary {
+	border: 2px solid white;
+	color: white;
+	font-weight: 300;
+}
+.btn-outline-secondary:hover {
+	border: 2px solid white;
+	background-color: #fff;
+	color: #d00d2d;
 }
 
 footer a:link, a:visited {
